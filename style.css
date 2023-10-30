@@ -1,0 +1,316 @@
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-night{
+    color: #fff;
+    background-color: #1b1b32;
+}
+.section-title{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Yeseva One', serif;
+}
+.section-description{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+.section-text{
+    font-size: 1.2rem;
+}
+.btn-info{
+    margin: 20px;
+    font-size: 1.2rem;
+}
+.text-night{
+    color: #000;
+}
+.text-day{
+    color: #000;
+}
+/*Navbar*/
+.navbar{
+    padding: 34px;
+    background-color: #f5f6f7;
+    border-bottom: 2px solid #00000029;
+}
+.navbar::after {
+    position: absolute;
+    inset: 0;
+    z-index: 1 ;
+    display: block;
+    content: "";
+    background-image: linear-gradient(rgba(var(--bd-violet-rgb),1),rgba(var(--bd-violet-rgb),0.95));}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+/*End Navbar*/
+/*Section Hero*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+.hero-main{
+    padding: 3rem;
+}
+.hero-main h1{
+    font-size: 2rem;
+    font-family: 'Yeseva One', serif;
+}
+
+.hero-main h2{
+    font-size:1.5rem;
+    color: #248;
+}
+.hero-img{
+    width: 150px;
+    margin: 20px;
+}
+/*End Section Hero*/
+/*About me*/
+.about-me{
+    height: 500px;
+    padding: 10px;
+}
+.about-me .container{
+    max-width: 600px;
+    text-align: center;
+}
+/*End About me*/
+
+
+/* Section XP */
+.experience{
+    padding: 40px;
+}
+.experience .row div{
+    height: 450px;
+}
+.experience .column{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .2s ease-in;
+
+}
+.experience .column:hover{
+    background-color: #0f0f22;
+    color: #fff;
+}
+.experience-title{
+    font-weight: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-container{
+    font-weight: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 5px;
+}
+
+    /* Icons */
+.experience i{
+    font-size: 2.5rem;
+    background-color:#0f0f22 ;
+    color:#7ade30 ;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+    /* End Icons */
+/* End Section XP */
+
+/* Section Project */
+.new-projects{
+    padding: 40px;
+    margin-bottom: 120px;
+}
+.new-projects img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.project-container{
+    padding-top: 60px;
+    margin-bottom: 40px;
+
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.project{
+    position: relative;
+}
+.project:hover img{
+    opacity: 0.2;
+}
+.project:hover .overlay{
+    opacity: 1;
+}
+.overlay .iconos-contenedor{
+    display: flex;
+}
+.overlay i{
+    color:#000;
+    font-size: 60px;
+    margin: 10px;
+}
+/* End Section Project */
+
+/* Section Contact */
+.contact .container {
+    max-width:1100px;
+    min-height: 200px;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.contact .rectangle{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 1px #fff;
+}
+.contact .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact .description{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.contact button{
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 1.25rem 2rem;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contact button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.contact button i {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contact button:hover i{
+    color: #000;
+}
+/* End Section Contact */
+/* Footer */
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-text{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom:30px ;
+    font-family: 'Yeseva One', serif;
+}
+
+.social-media-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    padding: 2px;
+    margin: 10px;
+    transition: all .4s ease-in;
+}
+.social-media-icons i{
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all .2s ease-in;
+}
+.social-media-icons a:hover{
+    background-color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    transform: translateY(-20px);
+}
+
+.social-media-icons a:hover i{
+    color: #000;
+}
+.copyright{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+/* End Footer */
+/*Navbar*/
+@media screen and (max-width:767px){
+    .navbar-brand{ 
+        display: none;/*Display logo*/
+    }
+}
+/*End Navbar*/
+@media screen and (min-width:760px){
+    .hero-lower img{ 
+        max-width: 600px;
+    }
+}
+/* Section XP */
+@media screen and (max-width:766px){
+    .experience .row div{
+        height: 340px;
+    }
+}
+/* Section Project */
+@media screen and (max-width:400px){
+    .overlay p{
+        height: 18px;
+    }
+    .overlay i {
+        height:40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
